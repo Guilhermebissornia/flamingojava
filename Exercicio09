@@ -1,0 +1,18 @@
+package flip;
+
+import java.util.Scanner;
+
+public class Exercicio09 { public static void main(String[] args) {
+
+	Scanner sc = new Scanner(System.in);
+	
+	 System.out.println("digite o lado  ");
+	 float lado = sc.nextFloat();
+	 
+	 float area= lado*lado;
+	System.out.println("a dimenensoes de um quadrado  é: "+area);
+	sc.close();
+	
+
+}
+}
