@@ -1,0 +1,26 @@
+package flip;
+
+import java.util.Scanner;
+
+public class Exercicio10 
+
+{ public static void main(String[] args) {
+
+	Scanner sc = new Scanner(System.in);
+	
+	 System.out.println("digite a diagonal maior  ");
+	 float basemaior = sc.nextFloat();
+	 
+	 System.out.println("digite a diagonal menor ");
+	 float basemenor = sc.nextFloat();
+	 
+	 System.out.println("digite a diagonal menor ");
+	 float altura = sc.nextFloat();
+	 
+	 float area= (basemaior+basemenor)*altura/2;
+	System.out.println("as dimencoes da base maior +a base menor*altura/2 é: "+area);
+	sc.close();
+	
+
+}
+}
