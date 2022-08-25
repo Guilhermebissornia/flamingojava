@@ -1,0 +1,20 @@
+package flip;
+
+import java.util.Scanner;
+
+public class Exercicio12 
+
+{ public static void main(String[] args) {
+
+	Scanner sc = new Scanner(System.in);
+	
+	 System.out.println("digite o raio  ");
+	 double raio = sc.nextDouble();
+	 
+	 double area= Math.PI*raio*raio;
+	System.out.println("dimensoes de um circulo é: "+area);
+	sc.close();
+	
+
+}
+}
