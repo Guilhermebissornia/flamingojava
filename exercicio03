@@ -1,0 +1,27 @@
+package flip;
+
+import java.util.Scanner;
+
+public class Atividade03 {
+	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		 System.out.println("digite sua idade do  ");
+		 int ano = sc.nextInt();
+		 
+		 System.out.println("digite o mes ");
+		 int mes = sc.nextInt();
+		 
+		 System.out.println("digite os dias ");
+		 int dia = sc.nextInt();
+		 
+		 int soma=(ano*365)+(mes*30)+(dia) ;
+		System.out.println("o resultado é : "+soma);
+		sc.close();
+		
+
+	}
+
+}
