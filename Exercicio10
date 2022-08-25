@@ -1,0 +1,23 @@
+package flip;
+
+import java.util.Scanner;
+
+public class Exercicio10 
+
+{ public static void main(String[] args) {
+
+	Scanner sc = new Scanner(System.in);
+	
+	 System.out.println("digite a diagonal maior  ");
+	 float diagonalmaior = sc.nextFloat();
+	 
+	 System.out.println("digite a diagonal menor ");
+	 float diagonalmenor = sc.nextFloat();
+	 
+	 float area= diagonalmaior*diagonalmenor/2;
+	System.out.println("o calculo da diagonal maior e da diagonal menor é: "+area);
+	sc.close();
+	
+
+}
+}
