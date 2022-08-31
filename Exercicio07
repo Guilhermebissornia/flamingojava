@@ -1,0 +1,21 @@
+package haha;
+
+import java.util.Scanner;
+
+public class Exercicio7 {
+	
+	public static void main(String[] args) {
+		 
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("digite o valor do raio");
+		
+		double raio=sc.nextDouble();
+		double altura = sc.nextDouble();
+		double diametro=raio*2;
+		double area=Math.PI*diametro*altura;			
+	System.out.println("o valor do volume de uma lata de oleo é :"+area);
+		
+	}
+
+}
