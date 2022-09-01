@@ -1,0 +1,36 @@
+//quilometragem: double
+//combustivel: double
+//abastecer (litros)
+//trafegar (distancia, litros)
+//combustivelNoTanque()
+//quilometragemCarro()
+
+package exemplo8;
+
+import java.util.Scanner;
+
+public class Exercicio08 {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("informe a quantidade de litros que seu carro faz por km");
+		double litros=sc.nextDouble();
+		
+		System.out.println("informe o tempo gasto desde o local de partida até o de chegada");
+		double tempogasto=sc.nextDouble();
+		
+		System.out.println("informe a velocidade permitida na rodvia que sera efetuado o trajeto");
+		double velocidade=sc.nextDouble();
+		
+		System.out.println("informe o tempo gasto desde o local de partida até o de chegada");
+		double distancia=tempogasto*velocidade;
+		
+		
+
+		
+	}
+
+}
