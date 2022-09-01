@@ -1,0 +1,12 @@
+package exercicio8;
+
+import java.util.Scanner;
+
+public class Exemplo07 {
+
+	public static void main(String[] args) {
+	
+		
+	float myfloatnum=5.99f;
+	System.out.println(myfloatnum);
+	
