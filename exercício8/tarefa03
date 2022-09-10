@@ -1,0 +1,29 @@
+package exercicio;
+
+import java.util.Scanner;
+
+
+public class Exercico {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o tempo gasto no até o local de chegada");
+		double tempogasto=sc.nextDouble();
+		
+		System.out.println("Digite a velocidade gasta até o local de chegada");
+		double velocidade=sc.nextDouble();
+		
+		double distancia=tempogasto*velocidade;
+		System.out.println("A distancia percorrida é:" +distancia+tempogasto+velocidade);
+		
+		double litros_usados=distancia/12;
+		System.out.println("a quantidade de litros de combustivel usados é:"+litros_usados+distancia+12);
+		
+		sc.close();
+		
+		
+	}
+
+}
