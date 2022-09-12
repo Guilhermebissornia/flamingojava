@@ -1,0 +1,29 @@
+package novo1;
+
+import java.util.Scanner;
+
+public class Exercicio9 {
+
+	public static void main(String[] args) {
+		
+			
+		Scanner sc = new Scanner(System.in);
+        
+		System.out.println("Digite o valor de a ");
+		int a = sc.nextInt();
+		
+		System.out.println("digite o valor de b");
+		int b =sc.nextInt();
+		
+		int recebendovalor= a+b;
+		
+		System.out.println("B = "+a+" A ="+b);
+
+		
+
+		sc.close();
+
+
+	}
+}
+
