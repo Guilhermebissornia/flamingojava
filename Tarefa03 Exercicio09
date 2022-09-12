@@ -1,0 +1,26 @@
+package tarefa03;
+
+import java.util.Scanner;
+
+public class Exercicio9 {
+
+	public static void main(String[] args) {
+		
+			
+				Scanner sc = new Scanner(System.in);
+				
+				System.out.println("digite o valor da prestação");
+				double valor =sc.nextDouble();
+				
+				System.out.println("digite a taxa");
+				double taxa= sc.nextDouble();
+				
+				System.out.println("digete o tempo em atraso");
+				double tempo=sc.nextDouble();
+				
+				double prestacao=valor+(valor*(taxa/100)*tempo);
+				System.out.println("apresentação do valor de uma prestação em atraso:"+prestacao);
+sc.close();
+
+	}
+}
