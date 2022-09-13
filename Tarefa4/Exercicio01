@@ -17,9 +17,9 @@ public static void main(String[] args) {
 		int a =sc.nextInt();
 		System.out.println("digite o valor de b");
 		int b =sc.nextInt();
-		System.out.println("digite o valores de c");
+		System.out.println("digite o valor de c");
 		int c =sc.nextInt();
-		System.out.println("digite o valores de d");
+		System.out.println("digite o valor de d");
 		int d =sc.nextInt();
 		
 		
