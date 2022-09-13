@@ -1,0 +1,96 @@
+package tarefa04;
+
+import java.util.Scanner;
+
+public class Exercico01 {
+	
+public static void main(String[] args) {
+
+		
+
+		Scanner sc= new Scanner(System.in);
+
+		
+		
+		
+		System.out.println("digite o valor de a");
+		int a =sc.nextInt();
+		System.out.println("digite o valor de b");
+		int b =sc.nextInt();
+		System.out.println("digite o valores de c");
+		int c =sc.nextInt();
+		System.out.println("digite o valores de d");
+		int d =sc.nextInt();
+		
+		
+
+		
+
+		int primeira_soma =a+b;
+
+		int segunda_soma= a+c;
+
+		int terceira_soma =a+d;
+		
+		int quarta_soma = b+c;
+		
+	  int quinta_soma = b+d;
+	    
+	  int sexta_soma = c+d;
+
+		
+
+		
+
+		System.out.println("a soma de a + b:" +primeira_soma);
+
+		System.out.println("a soma de a + c:"+segunda_soma);
+
+		System.out.println("a soma de a + d:"+terceira_soma);
+		
+		System.out.println("a soma de b+c :"+quarta_soma);
+		
+		System.out.println("a soma de b+d:"+quinta_soma);
+		
+		System.out.println("a soma de c+d:"+sexta_soma);
+
+	
+
+		int primeira_multiplicacao=a*b;
+
+		int segunda_multiplicacao=a*c;
+
+		int terceira_multiplicacao=a*d;
+		
+		int quarta_multiplicacao =b*c;
+				
+	  int quinta_multiplicacao =b*d;
+			    
+	  int sexta_multiplicacao =c*d;
+
+		
+
+		System.out.println("a multiplicação de a * b:" +primeira_multiplicacao);
+
+		System.out.println("a multiplicação de a * c :"+segunda_multiplicacao);
+
+		System.out.println("a multiplicação de a * d:"+terceira_multiplicacao);
+		
+		System.out.println("a multiplicação de b*c:"+quarta_multiplicacao);
+		
+		System.out.println("a mutiplicação de b * d:"+quinta_multiplicacao);
+		
+		System.out.println("a multiplicação c * d :"+sexta_multiplicacao);
+
+sc.close();
+
+		
+
+		
+
+
+	}
+
+
+
+}
