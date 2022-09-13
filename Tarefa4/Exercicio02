@@ -1,0 +1,28 @@
+package tarefa04;
+
+import java.util.Scanner;
+
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+	  
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Digiteo comprimento");
+		double comprimento=sc.nextDouble();
+		
+		System.out.println("Digite a largura");
+		double largura=sc.nextDouble();
+		
+		System.out.println("digite a altura");
+		double altura=sc.nextDouble();
+		
+		double volume=comprimento*largura*altura;
+		
+		System.out.println("o volume de uma caixa retangular é:"+volume);
+
+		
+		
+	}
+
+}
