@@ -1,0 +1,20 @@
+package tarefa04;
+
+import java.util.Scanner;
+
+public class Exercico04 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner (System.in);
+		
+		System.out.println("Digite a quantidade de real que voce deseja converter para dolar");
+		double cotacao_dolar=sc.nextDouble();
+		System.out.println("");
+		double valor_dolar=sc.nextDouble();
+		double valor_real=cotacao_dolar*valor_dolar;
+		
+		System.out.println("o valor em reais é:"+valor_real);
+	}
+
+}
