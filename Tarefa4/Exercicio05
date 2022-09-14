@@ -1,0 +1,23 @@
+package tarefa04;
+
+import java.util.Scanner;
+
+public class Exercicio05 {
+
+	public static void main(String[] args) {
+
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite a quantidade de dinheiro em reais em mãos");
+		float moeda_brasileira=sc.nextFloat();
+		System.out.println("Qual o valor da cotação do dolar");
+		float cotacao_dolar=sc.nextFloat();
+		float valor_real=moeda_brasileira/5;
+		
+		System.out.println("o valor em dolar é:"+valor_real);
+		
+		sc.close();
+	}
+
+}
