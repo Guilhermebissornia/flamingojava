@@ -1,0 +1,37 @@
+
+package tarefa04;
+
+import java.util.Scanner;
+
+public class Exercicio07 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println(" Digite o valor de A");
+		int a =sc.nextInt();
+		System.out.println(" Digite o valor de B");
+		int b =sc.nextInt();
+		System.out.println("Digte o valor de C");
+		int c =sc.nextInt();
+		
+		System.out.println(" Quadrado de cada valor guardado nas letras são");
+		
+		int quadrado_a=a*a;
+		System.out.println(" Quadrado do valor de a:"+quadrado_a);
+		
+		int quadrado_b=b*b;
+		System.out.println(" Quadrado do valor de b:"+quadrado_b);
+		
+		int quadrado_c=c*c;
+		System.out.println(" Quadrado do valor de c:"+quadrado_c);
+		
+		int soma = quadrado_a*quadrado_b*quadrado_c;
+		
+		System.out.println("Somando todos os quadrados o total fica:"+soma); 
+		
+		sc.close();
+	}
+
+}
