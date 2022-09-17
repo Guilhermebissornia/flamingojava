@@ -1,0 +1,21 @@
+package tarefa04;
+
+import java.util.Scanner;
+
+public class Exercicio09 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Qual o seu salario mensal:");
+		double variavel_sm = sc.nextFloat();
+		System.out.println("Nesse ano qual foi o percentual do reajuste do seu salario:");
+		double variavel_pr = sc.nextFloat();
+		double variavel_ns = variavel_sm+ (variavel_sm * variavel_pr) / 100;
+
+		System.out.println("O reajuste do salário mensal é de :" + variavel_ns);
+
+	}
+
+}
