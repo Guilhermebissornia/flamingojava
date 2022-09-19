@@ -28,6 +28,8 @@ public class Exercicio08 {
 		
 		int total = produto+soma;
 		System.out.println("Total juntando produto mais soma:"+total);
+		
+		sc.close();
 
 	}
 
