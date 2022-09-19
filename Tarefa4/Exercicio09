@@ -15,6 +15,8 @@ public class Exercicio09 {
 		float variavel_ns = variavel_sm + (variavel_sm * variavel_pr) / 100;
 
 		System.out.println("O reajuste do salário mensal é de :" + variavel_ns);
+		
+		sc.close();
 
 	}
 
