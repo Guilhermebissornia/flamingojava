@@ -1,0 +1,46 @@
+package tarefa04;
+
+import java.util.Scanner;
+
+public class Exercicio10 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a quantidade de votos que bolsonaro recebeu em todo brasil.");
+		double bolsonaro = sc.nextDouble();
+		System.out.println("Digite a quantidade de votos que lula teve em todo brasil.");
+		double lula = sc.nextDouble();
+		System.out.println("Digite a quantidade de votos que ciro teve em todo brasil.");
+		double ciro = sc.nextDouble();
+		System.out.println("Digite a quantidade de votos nulos em todo o brasil.");
+		double votos_nulos = sc.nextDouble();
+		System.out.println("Digite a quantidade de votos brancos em todo o brasil");
+		double votos_brancos = sc.nextDouble();
+
+		double total_eleitores = sc.nextDouble();
+
+		double vencedor = bolsonaro / 100 * total_eleitores;
+		System.out.println("O percentual de votos validos para o bolsonaro é:" + vencedor);
+
+		double segundo = lula / 100 * total_eleitores;
+		System.out.println("O percentual de votos validos para lula é:" + segundo);
+
+		double terceiro = ciro / 100 * total_eleitores;
+		System.out.println("O percentual de votos validos para ciro é:" + terceiro);
+
+		double total_nulos = votos_nulos / 100 * total_eleitores;
+		System.out.println("O percentual  de votos brancos é:" + total_nulos);
+
+		double total_brancos = votos_brancos / 100 * total_eleitores;
+		System.out.println("O percentual nulos é de:" + total_brancos);
+
+		double total_votos = bolsonaro + lula + ciro + votos_nulos + votos_brancos;
+		System.out.println("Total de eleitores é de:" + total_votos);
+
+		sc.close();
+
+	}
+
+}
