@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bissskateshop</title>
+</head>
+<body>
+    
+    <h1>Biss Skate Shop</h1>
+    <hr>
+      <ul>
+         
+     <li> acessórios</li>
+         <li>Bonés</li>
+        <li> Calçados</li>
+          <li>Roupas</li>
+          <li>Skate</li>
+            <li>Marcas</li>
+                <li>Promoções</li>
+
+                <form name="meu form">
+                    
+                    <h2> entre em contato</h2>
+                    
+                    <label for="name">nome:</label>
+                    <input type="text" id="nameid" nome="nome"/><br>
+                    
+                    <label for="tel"> telefone:</label>
+                    <input type="tel" id="telefoneid" telefone="telefone"/><br>
+                   
+                    <label for="email">email:</label>
+                    <input type="email" id="imailid" email="telefone"/> <br>
+
+                    <textarea placeholder="deixe sua mensagem"></textarea>
+                    <br>
+                    <input type="submit" class="enviar" onclick="enviar" value="enviar">
+
+
+      
+<style>
+    li{
+        display: inline-block; 
+        margin: 20px;
+        color: rgb(81, 136, 67);
+     }  
+     h1{ 
+         color: rgb(81, 136, 67);
+     } 
+
+     p{
+         line-height: 600px;
+    
+     }
+      body{
+          background-color: rgb(255, 255, 255);
+          padding: 0%;
+          margin: 0%;
+      }
+      form{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 15px;
+          background-color: rgb(81, 136, 67);
+          max-width: 300px;
+          
+      }
+      h2{
+          margin-bottom: 200px;
+          margin-left: 20px;
+          color: blanchedalmond;
+          text-shadow: 5px 5px 5px;
+      }
+      
+      input, textarea{
+          width: 200px;
+          padding: 10px;
+          color: rgb(8, 8, 8);
+          margin-left: 20px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          border: 1px solid;
+
+      }
+         
+      form label {
+          margin-left: 20px;
+          color: blanchedalmond;
+          font-weight: bold;
+      }
+    
+     input:hover,textarea:hover,input:focus,textarea:focus{
+         border-color: blanchedalmond;
+         box-shadow: 5px 0px 9px blanchedalmond;
+         background-color: blanchedalmond;
+         color: blanchedalmond;
+         font-weight: bold;
+     }
+    
+
+</style>
+    
+    
+    
+
+</body>
+</html> 
