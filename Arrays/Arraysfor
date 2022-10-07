@@ -1,0 +1,16 @@
+package tarefa06;
+
+public class Arraysfor {
+
+	public static void main(String[] args) {
+		String[] times = { "Atlético-MG", "Flamengo", " Palmeiras", " Fortaleza", " Corinthians", " RB Bragantino",
+				" Fluminense", " América-MG", " Atlético-GO", " Santos", " Ceará", " Internacional", " São Paulo",
+				" Athletico Paranaense", "Cuiabá", "Juventude" };
+		for (int i = 0; i < times.length; i++) {
+
+			System.out.println(i+1+times[i]);
+		}
+
+	}
+
+}
