@@ -1,0 +1,16 @@
+package tarefa06;
+
+public class Exemploarrays {
+
+	public static void main(String[] args) {
+
+		String[] carros = { "ford", "chevrolet", "volkswagem", "renault" };
+
+		System.out.println(carros[0]);
+		System.out.println(carros[1]);
+		System.out.println(carros[2]);
+		System.out.println(carros[3]);
+
+	}
+
+}
