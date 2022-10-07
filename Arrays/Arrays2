@@ -1,0 +1,25 @@
+package tarefa06;
+
+public class Exemploarray02 {
+
+	public static void main(String[] args) {
+		String[] carros = { "ford", "chevrolet", "volkswagem", "renault" };
+		System.out.println(carros[0]);
+		System.out.println(carros[1]);
+		System.out.println(carros[2]);
+		System.out.println(carros[3]);
+
+		carros[0] = "bmw";
+		carros[3] = "subaru";
+
+		System.out.println(carros[0]);
+		System.out.println(carros[1]);
+		System.out.println(carros[2]);
+		System.out.println(carros[3]);
+
+		System.out.println(carros.length);
+		
+		//arrays unidimensionais //
+
+	}
+}
