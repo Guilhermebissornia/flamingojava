@@ -1,0 +1,27 @@
+package tarefa05;
+
+import java.util.Scanner;
+
+public class Exercicio05 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o ano atual que estamos ");
+		int anoatual = sc.nextInt();
+		System.out.println("Digite o seu ano de nascimento");
+		int anonascimento = sc.nextInt();
+
+		int soma = anoatual - anonascimento;
+		if (soma >= 15) {
+			System.out.println("Você podera votar esse ano pois apartir dos 15 anos ja é permitido votar, sua idade é :"
+					+ soma + "Anos");
+		} else {
+
+			System.out.println("Não podera votar pois só é permitido votar apartir dos 15 anos,  sua idade atual é:"
+					+ soma + "Anos");
+		}
+		sc.close();
+	}
+
+}
