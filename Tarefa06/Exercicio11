@@ -1,0 +1,24 @@
+package tarefa06;
+
+import java.util.Scanner;
+
+public class Exercicio11 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite um valor inteiro até o número 3");
+		int valor = sc.nextInt();
+
+		if (valor <= 3) {
+			System.out.println("Apesentação de um número :" + valor);
+
+		} else {
+
+			System.out.println("Não é possivel apresentar o valor");
+		}
+
+		sc.close();
+	}
+
+}
