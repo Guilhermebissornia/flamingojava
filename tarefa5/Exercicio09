@@ -1,0 +1,35 @@
+package tarefa05;
+
+import java.util.Scanner;
+
+import javax.sound.midi.SysexMessage;
+
+public class Exercicio09 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Quantas horas você trabalha mensalmente ");
+		float horames = sc.nextFloat();
+
+		System.out.println("Qual o seu salario por hora ");
+
+		float salariohora = sc.nextFloat();
+		float salariomes = horames * salariohora;
+		//System.out.println(" Seu salario é:" +salariomes);
+
+		System.out.println("Digite a quantidade de horas extras feitas no mês");
+		float horaextra = sc.nextFloat();
+		double salariohoraextra = (horaextra * 1.5) + salariomes;
+		// System.out.println("Seus salario com horas extra é:" + salariohoraextra);
+
+		if (salariohoraextra > salariomes) {
+
+			System.out.println("seu salario mais horas extra  é:" + salariohoraextra);
+		} else {
+
+			System.out.println(" Você não possui horas extras seu salario normal é :" + salariomes);
+		}
+		sc.close();
+	}
+
+}
