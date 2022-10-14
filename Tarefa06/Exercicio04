@@ -1,0 +1,48 @@
+package tarefa06;
+
+import java.util.Scanner;
+
+public class Exercicio04 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite a primeira nota");
+		int nota1 = sc.nextInt();
+
+		System.out.println("Digite a segunda nota");
+		int nota2 = sc.nextInt();
+
+		System.out.println("Digite a terceira nota ");
+		int nota3 = sc.nextInt();
+
+		System.out.println("Digite a quarta nota");
+		int nota4 = sc.nextInt();
+
+		int total = nota1 + nota2 + nota3 + nota4;
+
+		if (total >= 7) {
+
+			System.out.println("Aluno Aprovado sua nota é:" + total);
+
+		}
+
+		else if (total < 7) {
+			System.out.println("Solicitando a  nota do exame ");
+			int nota = sc.nextInt();
+			int exame = total + nota;
+
+			System.out.println("Nota do seu exame é:" + exame);
+
+			if (exame >= 5) {
+
+				System.out.println("Aluno aprovado em exame");
+			} else {
+
+				System.out.println(" Você foi reprovado pois Sua média é:" + exame);
+			}
+
+		}
+		sc.close();
+	}
+
+}
