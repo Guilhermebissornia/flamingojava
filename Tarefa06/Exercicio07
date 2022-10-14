@@ -1,0 +1,31 @@
+package tarefa06;
+
+import java.util.Scanner;
+
+public class Exercicio07 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Primeiro valor");
+		int a = sc.nextInt();
+
+		System.out.println("Segundo valor");
+		int b = sc.nextInt();
+
+		System.out.println("Terceiro valor");
+		int c = sc.nextInt();
+
+		System.out.println("Quarto valor");
+		int d = sc.nextInt();
+
+		if (a % 2 == 0 || b % 2 == 0 || c % 2 == 0 || d % 2 == 0) {
+
+			System.out.println("Os números divisiveis por 2 ");
+		} else if (a % 3 == 0 || b % 3 == 0 || c % 3 == 0 || d % 3 == 0) {
+			System.out.println("Os numeros são divisiveis por 3");
+
+		}
+
+	}
+
+}
