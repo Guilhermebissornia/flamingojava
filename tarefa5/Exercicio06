@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Exercicio06 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println(" Digite o primeiro valor: ");
+
+		int primeirovalor = sc.nextInt();
+
+		System.out.println(" Digite o segundo valor:");
+
+		int segundovalor = sc.nextInt();
+
+		if (primeirovalor > segundovalor) {
+
+			System.out.println("O primeiro valor é maior:" + primeirovalor);
+		}
+
+		else {
+
+			System.out.println(" o segundo valor é maior:" + segundovalor);
+		}
+		sc.close();
+	}
+
+}
