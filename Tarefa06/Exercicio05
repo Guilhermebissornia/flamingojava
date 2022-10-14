@@ -1,0 +1,33 @@
+package tarefa06;
+
+import java.util.Scanner;
+
+public class Exercicio05 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o primeiro valor");
+		int a = sc.nextInt();
+		System.out.println("Digite o segundo valor");
+		int b = sc.nextInt();
+		System.out.println("Digite o terceiro valor");
+		int c = sc.nextInt();
+
+		double delta = (Math.pow(b, 2));
+
+		if (delta < 0) {
+
+			System.out.println("escrver" + delta);
+
+		} else if (delta > 0) {
+
+			System.out.println("Escrever 2" + delta);
+		} else if (delta == 0) {
+
+			System.out.println("escreva 3" + delta);
+
+		}
+		sc.close();
+	}
+
+}
