@@ -1,0 +1,36 @@
+package tarefa05;
+
+import java.util.Scanner;
+
+public class Exercicio07 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o primeiro valor para ler");
+
+		int valor1 = sc.nextInt();
+
+		System.out.println("Digite o segundo valor a ser lido");
+
+		int valor2 = sc.nextInt();
+
+		if (valor2 < valor1) {
+
+			System.out.println("Ordem crescente:" + valor2 + "," + valor1);
+
+		} else if (valor1 == valor2) {
+
+			System.out.println(" digite outro valor");
+
+		} else {
+
+			System.out.println(" ordem crescente: " + valor1 + "," + valor2);
+
+		}
+
+		sc.close();
+
+	}
+
+}
