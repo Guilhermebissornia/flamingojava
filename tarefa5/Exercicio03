@@ -1,0 +1,26 @@
+package tarefa05;
+
+import java.util.Scanner;
+
+public class Exercicio03 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite a quantidade de maçãs compradas");
+
+		int maca = sc.nextInt();
+		if (maca < 12) {
+
+			double valorfinal = maca * 1.30;
+			System.out.println("Valor a pagar:" + valorfinal);
+
+		} else {
+			double valorfinal = maca;
+
+			System.out.println(" valor a pagar:" + valorfinal);
+		}
+		sc.close();
+	}
+
+}
