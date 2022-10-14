@@ -1,0 +1,29 @@
+package tarefa06;
+
+import java.util.Scanner;
+
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o  valor");
+
+		int valor = sc.nextInt();
+
+		int resultado = valor * -1;
+
+		int resultado2 = valor = valor;
+
+		if (valor < 0) {
+
+			System.out.println("O numero fornecido é :" + resultado);
+
+		} else if (valor > 0) {
+			System.out.println("O numero fornecido é " + resultado2);
+		}
+		sc.close();
+
+	}
+
+}
