@@ -1,0 +1,24 @@
+package tarefa06;
+
+import java.util.Scanner;
+
+public class Exercicio09 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("informe um número");
+		int n1 = sc.nextInt();
+
+		if (n1 % 2 == 0) {
+
+			System.out.println("Esse numero é par");
+		} else {
+
+			System.out.println("Esse numero é impar");
+		}
+
+		sc.close();
+
+	}
+
+}
