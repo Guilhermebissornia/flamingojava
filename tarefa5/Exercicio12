@@ -1,0 +1,29 @@
+package tarefa05;
+
+import java.util.Scanner;
+
+public class Exercicio12 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println(" Qual a quantidade atual de bolas de futebol no estoque ? ");
+		int quantidadeemestoque = sc.nextInt();
+
+		System.out.println("Qual a quantidade maxima que podemos armazenar em nosso estoque de bolas de futebol ?  ");
+		int quantidademaxima = sc.nextInt();
+
+		System.out.println(" Qual a quantidade minima  que podemos ter em nosso estoque, de  bolas de futebol ? ");
+		int quantidademinima = sc.nextInt();
+
+		int quantidademedia = quantidademaxima + quantidademinima / 2;
+
+		if (quantidadeemestoque >= quantidademedia) {
+			System.out.println("Não efetuar compra");
+
+		} else {
+			System.out.println("Efetuar compra");
+		}
+		sc.close();				
+	}
+
+}
