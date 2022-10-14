@@ -1,0 +1,31 @@
+package tarefa05;
+
+import java.util.Scanner;
+
+public class Exercicio10 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Qual o seu salario total mensalmente ");
+		double salariomes = sc.nextDouble();
+		System.out.println("Digite o valor das vendas efetuadas ");
+		double vendasfeitas = sc.nextDouble();
+
+		double comissao1 = (vendasfeitas * 0.3) + salariomes;
+
+		double comissao2 = (vendasfeitas * 0.5) + salariomes;
+
+		if (vendasfeitas <= 1.500) {
+
+			System.out.println(" Seu salario calculado com base nos 3% do valor vendido:" + comissao1);
+		} else {
+			if (vendasfeitas > 1.500) {
+				System.out.println(" Seu salario calculado com base nos 5% do valor vendido:" );
+			}
+		}
+
+		sc.close();
+	}
+
+}
