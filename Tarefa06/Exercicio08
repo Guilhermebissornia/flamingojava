@@ -1,1 +1,67 @@
+package tarefa06;
+
+import java.util.Scanner;
+
+public class Exercicio08 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o primeiro número");
+		int a = sc.nextInt();
+
+		System.out.println("Digite o segundo  número");
+		int b = sc.nextInt();
+
+		System.out.println("Digite o terceiro número");
+		int c = sc.nextInt();
+
+		System.out.println("Digite o quarto número");
+		int d = sc.nextInt();
+
+		System.out.println("Digite o quinto número");
+		int e = sc.nextInt();
+
+		if ((a >= b) && (a >= c) && (a >= d) && (a >= e)) {
+
+			System.out.println("o valor maior é :" + a);
+
+		}
+		if ((b >= a) && (b >= c) && (b >= d) && (b >= e)) {
+
+			System.out.println("O valor maior é:" + b);
+		}
+		if ((c >= a) && (c >= b) && (c >= d) && (c >= e)) {
+			System.out.println("O valor maior é :" + c);
+		}
+		if ((d >= a) && (d >= b) && (d >= c) && (d >= e)) {
+			System.out.println("O valor maior é:" + d);
+		}
+		if ((e >= a) && (e >= b) && (e >= c) && (e >= d)) {
+
+			System.out.println("O valor maior é:" + e);
+		}
+		if ((a <= b) && (a <= c) && (a <= d) && (a <= e)) {
+
+			System.out.println("O valor menor é :" + a);
+		}
+		if ((b <= a) && (b <= c) && (b <= d) && (b <= e)) {
+			System.out.println("O valor menor é:" + b);
+		}
+		if ((c <= a) && (c <= b) && (c <= d) && (c <= e)) {
+
+			System.out.println("o valor menor é:" + c);
+		}
+		if ((d <= a) && (d <= b) && (d <= c) && (d <= e)) {
+
+		}
+		if ((e <= a) && (e <= b) && (e <= c) && (e <= d)) {
+
+			System.out.println("O valor meno é:" + e);
+		}
+
+		sc.close();
+
+	}
+
+}
 
