@@ -1,1 +1,29 @@
+package tarefa06;
 
+import java.util.Scanner;
+
+public class Exercicio12 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println(" Digite o seu nome ");
+		String nome = sc.next();
+
+		System.out.println(nome);
+
+		System.out.println("Digite o seu sexo Masculino / Feminino  ");
+		String sexo = sc.next();
+
+		System.out.println(sexo);
+
+		if (sexo == "masculino") {
+
+			System.out.println("Ilmo Sr." + nome);
+		} else {
+
+			System.out.println("Ilma Sra." + nome);
+		}
+		sc.close();
+	}
+}
