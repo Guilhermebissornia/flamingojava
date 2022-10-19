@@ -77,9 +77,7 @@ Qual a versão corrente ?
 C#
 
 
-Oque é C# ?
-
-é uma linguagem de programação de uso geral feita pela Microsoft.
+considera a principal linguagem de desenvolvimento de softwares comerciais do mundo.
 
 
 Para que serve C# ?
@@ -99,6 +97,12 @@ desenvolver para plataformas web, dispositivos móveis e aplicações desktop.
 
 Exemplos de aplicação C#.
 
+ASP.NET
+
+C# e .NET são a mesma coisa?
+De forma alguma! Vamos entender que .NET é uma biblioteca, um local onde está disponível diversos recursos do sistema e quando você precisa de um destes recursos você recorre a esta biblioteca. Este “acesso ao recurso” depende de uma linguagem de programação. O C# é uma das linguagens que podem acessar a biblioteca .NET e carregar o recurso do sistema que você necessita.
+
+Mas além do C#, a linguagem ASP.Net e F# também podem acessar a biblioteca .NET.
 
 
 
@@ -107,6 +111,3 @@ Documentação oficial C#.
 
 
 Qual a versão corrente ?
-
-
-
