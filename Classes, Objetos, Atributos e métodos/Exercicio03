@@ -1,0 +1,22 @@
+package poo;
+
+public class Atributoscelular {
+
+	public static void main(String[] args) {
+
+		for (int i = 0; i < 2; i++) {
+
+			celular novo = new celular();
+
+			System.out.println("marca:" + novo.marca[i]);
+			System.out.println("Sistemaop:" + novo.sistemaop[i]);
+			System.out.println("Modelo:" + novo.modelo[i]);
+			System.out.println("Memória:" + novo.memoria[i]);
+			System.out.println("Valor:" + novo.valor[i]);
+			System.out.println("Fabricação:" + novo.fabricacao[i]);
+			System.out.println("");
+
+		}
+
+	}
+}
