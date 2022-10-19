@@ -1,0 +1,14 @@
+01 R: ﻿package celular;
+
+public class Celular {
+
+	// atributos
+
+	String[] marca = { "Xiaomi" };
+	String[] sistemaop = { "android" };
+	String[] modelo = { "note 11" };
+	String[] memoria = { "128gb" };
+	double[] valor = { 1.200 };
+	int[] fabricacao = { 2022 };
+
+}
