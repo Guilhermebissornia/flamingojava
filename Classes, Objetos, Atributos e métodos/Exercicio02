@@ -1,0 +1,11 @@
+package poo;
+
+public class computador {
+
+	String[] marca = { "Strong Tech" };
+	String[] sistemaop = { "Windows 10" };
+	String[] memoria = { " 8g" };
+	double[] valor = { 1.665 };
+	int[] fabricacao = { 2022 };
+
+}
