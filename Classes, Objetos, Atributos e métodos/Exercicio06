@@ -1,0 +1,19 @@
+package poo;
+
+public class Bicicleta2 {
+
+	public static void main(String[] args) {
+
+		for (int j = 0; j < 2; j++) {
+
+			Bicicleta novo = new Bicicleta();
+
+			System.out.println("modelo:" + novo.modelo[j]);
+			System.out.println("ano:" + novo.ano[j]);
+			System.out.println("cor:" + novo.cor[j]);
+			System.out.println("aro:" + novo.aro[j]);
+
+		}
+
+	}
+}
