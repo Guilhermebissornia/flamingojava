@@ -1,12 +1,12 @@
 package poo;
 
-public class Atributoscelular {
+public class Celular2 {
 
 	public static void main(String[] args) {
 
 		for (int i = 0; i < 2; i++) {
 
-			celular novo = new celular();
+			Celular novo = new Celular();
 
 			System.out.println("marca:" + novo.marca[i]);
 			System.out.println("Sistemaop:" + novo.sistemaop[i]);
@@ -19,4 +19,5 @@ public class Atributoscelular {
 		}
 
 	}
+
 }
