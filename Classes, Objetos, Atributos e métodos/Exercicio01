@@ -1,14 +1,15 @@
-01 R: ﻿package celular;
+package poo;
 
 public class Celular {
-
+	
+	
 	// atributos
 
-	String[] marca = { "Xiaomi" };
-	String[] sistemaop = { "android" };
-	String[] modelo = { "note 11" };
-	String[] memoria = { "128gb" };
-	double[] valor = { 1.200 };
-	int[] fabricacao = { 2022 };
+		String[] marca = { "Xiaomi" ,"sansumg"};
+		String[] sistemaop = { "android","android" };
+		String[] modelo = { "note 11"," s7"};
+		String[] memoria = { "128gb" ,"65gb"};
+		double[] valor = { 1.200, 3000 };
+		int[] fabricacao = { 2022,2021 };
 
-}
+	}
