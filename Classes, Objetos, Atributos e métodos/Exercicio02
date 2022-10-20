@@ -1,11 +1,11 @@
 package poo;
 
-public class computador {
+public class Computador {
 
-	String[] marca = { "Strong Tech" };
-	String[] sistemaop = { "Windows 10" };
-	String[] memoria = { " 8g" };
-	double[] valor = { 1.665 };
-	int[] fabricacao = { 2022 };
+	String[] marca = { "Strong Tech", "dell" };
+	String[] sistemaop = { "Windows 10", "Windows 9" };
+	String[] memoria = { " 8gb", "16gb" };
+	double[] valor = { 1665, 2000 };
+	int[] fabricacao = { 2022, 2023 };
 
 }
