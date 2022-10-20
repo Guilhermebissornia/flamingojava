@@ -1,0 +1,12 @@
+package poo;
+
+public class Cadeiragamer {
+
+	String[] marca = { "ThunderX3", "roxtor" };
+
+	String[] cor = { "preto", "azul" };
+
+	int[] serie = { 54344, 56248 };
+
+	double[] valor = { 1515, 1600 };
+}
