@@ -1,0 +1,20 @@
+package poo;
+
+public class Computador2 {
+
+	public static void main(String[] args) {
+
+		for (int k = 0; k < 2; k++) {
+
+			Computador novo = new Computador();
+
+			System.out.println("marca:" + novo.marca[k]);
+			System.out.println("sistemaop:" + novo.sistemaop[k]);
+			System.out.println("memoria:" + novo.memoria[k]);
+			System.out.println("valor:" + novo.valor[k]);
+			System.out.println("fabricação:" + novo.fabricacao[k]);
+
+		}
+	}
+
+}
