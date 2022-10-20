@@ -1,0 +1,9 @@
+package poo;
+
+public class Bicicleta {
+
+	String[] modelo = { "‎Ksw Freio a Disco", "calói" };
+	String[] ano = { "2021", "2022" };
+	String[] cor = { "preta", "amarelo" };
+	String[] aro = { "29", "28" };
+}
