@@ -1,0 +1,19 @@
+package poo;
+
+public class Cadeiragamer2 {
+
+	public static void main(String[] args) {
+
+		for (int h = 0; h < 2; h++) {
+
+			Cadeiragamer novo = new Cadeiragamer();
+
+			System.out.println("marca:" + novo.marca[h]);
+			System.out.println("cor:" + novo.cor[h]);
+			System.out.println("Série:" + novo.serie[h]);
+			System.out.println("valor:" + novo.valor[h]);
+
+		}
+
+	}
+}
