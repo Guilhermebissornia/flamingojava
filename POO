@@ -1,0 +1,37 @@
+package orientacaoAObjetos;
+
+
+
+public class MetodosEmJava {
+
+
+
+static void meuMetodo() {
+
+System.out.println("Olá Mundo !");
+
+}
+
+
+
+public void metodoPublico() {
+
+System.out.println("Teste");
+
+}
+
+public static void main(String[] args) {
+
+meuMetodo();
+
+//metodoPublico();
+
+
+
+MetodosEmJava sc = new MetodosEmJava();
+
+sc.metodoPublico();
+
+}
+
+}
