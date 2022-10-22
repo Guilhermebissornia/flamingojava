@@ -1,0 +1,39 @@
+package orientacaoAObjetos;
+
+
+
+public class MetodosComPassagemDeParametros {
+
+
+
+// Criar método de aceleraçãoTotal
+
+public void aceleracao() {
+
+System.out.println("O carro está mais rápido que o permitido");
+
+}
+
+
+
+public void velocidade(int velocidadeMaxima) {
+
+System.out.println("A velocidade máxima é :" + velocidadeMaxima+" Km/h");
+
+}
+
+
+
+public static void main(String[] args) {
+
+
+
+MetodosComPassagemDeParametros meuCarro = new MetodosComPassagemDeParametros();
+
+meuCarro.aceleracao();
+
+meuCarro.velocidade(200);
+
+}
+
+}
