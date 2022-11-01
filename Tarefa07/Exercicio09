@@ -1,0 +1,33 @@
+package tarefa07;
+
+import java.util.Scanner;
+
+public class Exercicio09 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a quantidade de litros desejados de alcool");
+		int litrosalcool = sc.nextInt();
+
+		// System.out.println("Digite a quantidade de litros desejados de gasolina");
+		// int litrosgasolina = sc.nextInt();
+
+		double valoralcool = 2.90;
+		// double valorgasolina = 3.30;
+
+		double ate20 = (valoralcool * litrosalcool) - 0.3;
+		double maior20 = (valoralcool * litrosalcool) - 0.5;
+
+		if (litrosalcool <= 20) {
+
+			System.out.println("O valor de desconto de até 20 litros é:" + ate20);
+		} else if (litrosalcool > 20) {
+
+			System.out.println("O valor de desconto maior que 20 litros é:" + maior20);
+		}
+		sc.close();
+	}
+
+}
