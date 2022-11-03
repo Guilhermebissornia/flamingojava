@@ -1,0 +1,30 @@
+package tarefa07;
+
+import java.util.Scanner;
+
+public class Exercicio12 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int login = 1234;
+		int senha = 9999;
+		
+		System.out.println("Digite o seu acesso de usuario");
+		int usuario = sc.nextInt();
+
+		System.out.println("Digite a sua senha");
+		int senha2 = sc.nextInt();
+
+		if ((usuario == login) && (senha == senha2)) {
+
+			System.err.println("Acesso permitido");
+		} else {
+
+			System.out.println("Usuario inválido");
+		}
+sc.close();
+	}
+
+}
