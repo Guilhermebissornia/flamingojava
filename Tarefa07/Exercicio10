@@ -1,0 +1,46 @@
+package tarefa07;
+
+import java.util.Scanner;
+
+public class Exercicio10 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a idade do primeiro homem");
+		int homem1 = sc.nextInt();
+
+		System.out.println("Digite a idade do segunda mulher");
+		int mulher2 = sc.nextInt();
+
+		System.out.println("Digite a idade do terceiro homem");
+		int homem3 = sc.nextInt();
+
+		System.out.println("Digite a idade da quarta mulher");
+		int mulher4 = sc.nextInt();
+
+		if ((homem1 == mulher2) && (homem3 == mulher4)) {
+
+			System.out.println("A soma das idades do homem mais velho com a mulher mais nova é:");
+		} else if ((homem1 > mulher2) && (homem3 > mulher4)) {
+
+			System.out.println(homem1 + mulher4);
+			System.out.println(mulher2 + homem3);
+		} else if ((mulher2 > homem1) && (mulher4 > homem3)) {
+
+			System.out.println(mulher2 + homem3);
+			System.out.println(homem1 + mulher4);
+		} else if ((homem3 > mulher4) && (homem1 > mulher2)) {
+			System.out.println(homem3 + mulher2);
+			System.out.println(mulher4 + homem1);
+		} else if ((mulher4 > homem3) && (mulher2 > homem1)) {
+
+			System.out.println(mulher4 + homem1);
+			System.out.println(homem3 + mulher2);
+
+		}
+
+		sc.close();
+	}
+
+}
