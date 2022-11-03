@@ -1,0 +1,27 @@
+package tarefa07;
+
+import java.util.Scanner;
+
+public class Exericio11 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		double morango1 = 2.50;
+		double morango = 2.20;
+		double maca1 = 1.80;
+		double maca = 1.50;
+
+		System.out.println("Digite a quantidade de morango que você deseja");
+		double morangokg = sc.nextDouble();
+
+		System.out.println("Digite a quantidade de maçãs que você deseja");
+		double macakg = sc.nextDouble();
+		
+		
+
+		sc.close();
+	}
+
+}
