@@ -1,0 +1,37 @@
+package tarefa07;
+
+import java.util.Scanner;
+
+public class Exercicio15 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o se código de funcionario");
+		int codigo_funcionario = sc.nextInt();
+
+		System.out.println("Digite o ano de seu nascimento");
+		int anonascimento = sc.nextInt();
+
+		System.out.println("Qual o ano de ingresso na empresa");
+		int anodeingresso = sc.nextInt();
+
+		int calculoidade = 2022 - anonascimento;
+
+		int inicionaempresa = 2022 - anodeingresso;
+
+		if ((anonascimento >= 60) && (anodeingresso >= 25)) {
+
+			System.out.println("Requerer aposentadoria" );
+		}
+
+		else if ((anonascimento < 65) || (anodeingresso < 30)) {
+
+			System.out.println("Não requer aposentadoria" );
+		}
+
+		sc.close();
+	}
+
+}
