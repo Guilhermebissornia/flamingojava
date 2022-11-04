@@ -1,0 +1,44 @@
+package tarefa07;
+
+import java.util.Scanner;
+
+public class Exercicio13 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o nome do produto: ");
+		String nomeProduto = sc.nextLine();
+
+		System.out.println("Digite a quantidade do produto");
+		int quantidade = sc.nextInt();
+
+		System.out.println("Digite o preço unitario");
+		float preco = sc.nextFloat();
+
+		float total = quantidade * preco;
+
+		double desconto2 = total * 2 / 100;
+		double desconto3 = total * 3 / 100;
+		double desconto5 = total * 5 / 100;
+
+		double soma = total - desconto2;
+		double somab = total - desconto3;
+		double somac = total - desconto5;
+
+		if (quantidade <= 5) {
+
+			System.out.println("Se a quantidade for menor ou igual a 5 o desconto sera de 2 %");
+		} else if ((quantidade > 5) && (quantidade <= 10)) {
+			System.out.println("O desconto sera de 3 %");
+
+		} else if (quantidade > 10) {
+
+			System.out.println(" O desconto será de 5 %");
+		}
+
+		sc.close();
+
+	}
+
+}
