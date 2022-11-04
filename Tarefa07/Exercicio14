@@ -1,0 +1,44 @@
+package tarefa07;
+
+import java.util.Scanner;
+
+public class Exercicio14 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a primeira nota");
+		double nota1 = sc.nextDouble();
+
+		System.out.println("Digite a segunda nota");
+		double nota2 = sc.nextDouble();
+
+		System.out.println("Digite a terceira nota");
+		double nota3 = sc.nextDouble();
+
+		System.out.println("Digite a média dos exercicios");
+		double mediaexercicio = sc.nextDouble();
+
+		double media_de_aproveitamento = nota1 + nota2 * 2 + nota3 + mediaexercicio / 7;
+
+		if (media_de_aproveitamento >= 9.0) {
+
+			System.out.println("O conceito é A");
+
+		} else if ((media_de_aproveitamento >= 7.5) && (media_de_aproveitamento < 9.0)) {
+
+			System.out.println("O conceito é B");
+		} else if ((media_de_aproveitamento >= 6.0) && (media_de_aproveitamento < 7.5)) {
+
+			System.out.println("O conceito é C");
+		} else if (media_de_aproveitamento < 6.0) {
+
+			System.out.println("O conceito é D");
+		}
+
+		sc.close();
+
+	}
+
+}
