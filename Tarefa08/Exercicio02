@@ -1,0 +1,25 @@
+package tarefa08;
+
+import java.util.Scanner;
+
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o numero 1 para que seja apresentado a soma dos 100 primeiros numeros");
+
+		int numero = 0;
+		int contadora = 0;
+
+		while (contadora <= 100) {
+
+			numero += contadora;
+			contadora++;
+
+			System.out.println(numero);
+		}
+
+		sc.close();
+
+	}
