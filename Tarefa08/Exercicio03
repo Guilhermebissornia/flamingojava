@@ -1,0 +1,27 @@
+package tarefa08;
+
+import java.util.Scanner;
+
+public class Exercicio03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int numero = 0;
+		int contadora = 0;
+
+		System.out.println("Digite o numero para fazer a soma dos valores pares  de 1 ao 500");
+
+		while (numero <= 500) {
+
+			numero += contadora;
+			contadora += 2;
+
+			System.out.println(numero);
+		}
+
+		sc.close();
+
+	}
+
+}
