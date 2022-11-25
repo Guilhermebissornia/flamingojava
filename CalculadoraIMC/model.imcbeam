@@ -1,0 +1,67 @@
+package com.calculadora_imc.model;
+
+import java.text.DecimalFormat;
+
+public class ImcBeam {
+
+	private float peso;
+	private float altura;
+
+	public ImcBeam() {
+
+	}
+
+	public ImcBeam(String peso, String altura) {
+		setAltura(altura);
+		setPeso(peso);
+
+	}
+
+	public float getPeso() {
+		return peso;
+	}
+
+	public void setPeso(float peso) {
+		this.peso = peso;
+	}
+
+	public void setPeso(String peso) {
+		this.peso = (peso.matches("[0-9.]+") == false ? 0f : Float.parseFloat(peso));
+	}
+
+	public float getAltura() {
+		return altura;
+	}
+
+	public void setAltura(float altura) {
+		this.altura = altura;
+	}
+
+	public void setAltura(String altura) {
+
+		this.altura = (altura.matches("[0-9.]+") == false ? 0f : Float.parseFloat(altura));
+	}
+
+	public String getResult() {
+		Float imc = peso / (altura * 2);
+		if (imc.isNaN())
+			return " Deu ruim ";
+
+		StringBuilder result = new StringBuilder("IMC =" + new DecimalFormat("#.#").format(imc));
+
+		if (imc > 15) {
+
+			result.append("Você esta no peso padrão");
+
+		} else {
+			result.append("Você esta acima do peso");
+		}
+		return result.toString();
+
+	}
+
+	@Override
+	public String toString() {
+		return "ImcBeam [peso=" + peso + ", altura=" + altura + ", getResult()=" + getResult() + "]";
+	}
+}
