@@ -1,0 +1,583 @@
+01 R: package tarefa09;
+
+
+
+public class Exericio01 {
+
+
+
+	public static void main(String[] args) {
+
+		int valor = 15;
+
+
+
+		do {
+
+
+
+			System.out.println(valor * valor);
+
+
+
+			valor++;
+
+
+
+		} while (valor <= 200);
+
+
+
+	}
+
+
+
+}
+
+
+
+02 R: package tarefa09;
+
+
+
+public class Exercicio02 {
+
+
+
+	public static void main(String[] args) {
+
+
+
+		int valor = 1;
+
+		int soma = 0;
+
+
+
+		do {
+
+
+
+			if (valor % 2 == 0) {
+
+				soma = soma + valor;
+
+			}
+
+
+
+			valor++;
+
+		} while (valor <= 500);
+
+
+
+		System.out.println(soma);
+
+
+
+	}
+
+
+
+}
+
+
+
+03 R: package tarefa09;
+
+
+
+public class Exercicio03 {
+
+
+
+	public static void main(String[] args) {
+
+		int contar = 1;
+
+
+
+		do {
+
+
+
+			if (contar % 4 == 0) {
+
+				System.out.println(contar);
+
+			}
+
+
+
+			contar++;
+
+		} while (contar < 200);
+
+
+
+	}
+
+
+
+}
+
+
+
+04 R:package tarefa09;
+
+
+
+public class Exercicio04 {
+
+
+
+	public static void main(String[] args) {
+
+		int quadro = 0;
+
+		float acumuladores = 0;
+
+		float grao = 1;
+
+
+
+		do {
+
+
+
+			acumuladores = acumuladores + grao;
+
+			grao = grao * 2;
+
+
+
+			System.out.println(acumuladores);
+
+			quadro++;
+
+		} while (quadro < 63);
+
+
+
+		System.out.println(acumuladores);
+
+
+
+	}
+
+
+
+}
+
+
+
+05 R: package tarefa09;
+
+
+
+public class Exercicio05 {
+
+
+
+	public static void main(String[] args) {
+
+		int numero = 0;
+
+		int fatorial = 1;
+
+		int contadora = 1;
+
+		int contar = 1;
+
+		int soma;
+
+
+
+		do {
+
+			System.out.println("Digite o valor numero: " + contadora);
+
+			numero = 0;
+
+
+
+			do {
+
+
+
+				fatorial = fatorial * contar;
+
+				soma = fatorial;
+
+
+
+				contar++;
+
+
+
+			} while (contar <= numero);
+
+
+
+			System.out.println(soma);
+
+
+
+			contadora++;
+
+		} while (contadora <= 15);
+
+
+
+	}
+
+
+
+}
+
+
+
+06 R:package tarefa09;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio06 {
+
+
+
+	public static void main(String[] args) {
+
+		float numero;
+
+		int valorinserido = 0;
+
+		float soma = 0;
+
+		float media = 0;
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		do {
+
+
+
+			System.out.println("Digite um valor ");
+
+			numero = sc.nextFloat();
+
+
+
+			valorinserido = valorinserido + 1;
+
+			soma = numero + soma;
+
+			media = soma / valorinserido;
+
+
+
+			if (numero <= 0) {
+
+				valorinserido = valorinserido - 1;
+
+				soma = soma - (+numero);
+
+				media = soma / valorinserido;
+
+
+
+				if (valorinserido == 0) {
+
+					media = 0;
+
+				}
+
+
+
+			}
+
+
+
+		} while (numero >= 0);
+
+
+
+		System.out.println("Valores Lidos " + (valorinserido));
+
+		System.out.println("Soma " + soma);
+
+		System.out.println("Média " + media);
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+07 R:package tarefa09;
+
+
+
+public class Exercicio07 {
+
+
+
+	public static void main(String[] args) {
+
+
+
+		int num = 10;
+
+		int contar = 1;
+
+		int fatorial = 1;
+
+
+
+		do {
+
+
+
+			if (num % 2 != 0) {
+
+
+
+				fatorial = fatorial * contar;
+
+
+
+			}
+
+
+
+			System.out.println(fatorial);
+
+			contar++;
+
+		} while (contar <= num);
+
+	}
+
+
+
+}
+
+08 R: package tarefa09;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio08 {
+
+
+
+	public static void main(String[] args) {
+
+
+
+		Scanner sc = new Scanner(System.in);
+
+		String nome;
+
+		float largura, comprimento, area, soma = 0;
+
+		char continuar;
+
+
+
+		do {
+
+			System.out.print("Digite o nome do cômodo: ");
+
+			nome = sc.nextLine();
+
+
+
+			System.out.print("Digite o comprimento do cômodo: ");
+
+			comprimento = sc.nextFloat();
+
+
+
+			System.out.print("Digite a largura do cômodo: ");
+
+			largura = sc.nextFloat();
+
+
+
+			area = largura * comprimento;
+
+
+
+			System.out.println("A área do cômodo " + nome + " é: " + area);
+
+			System.out.println();
+
+
+
+			System.out.print("Deseja continuar calculando? ( sim ou não): ");
+
+			continuar = sc.next().charAt(0);
+
+			System.out.println();
+
+
+
+			soma = soma + area;
+
+
+
+			sc.nextLine();
+
+		} while (continuar != 'n');
+
+
+
+		System.out.println("A soma das areas dos cômodos lidos é: " + soma);
+
+
+
+		sc.close();
+
+
+
+	}
+
+
+
+} 
+
+09 R:import java.util.Scanner;
+
+
+
+public class Exercicio09 {
+
+
+
+	public static void main(String[] args) {
+
+		int valor, menorValor = 0, maiorValor = 0;
+
+
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		do {
+
+
+
+			System.out.print("Digite um valor: ");
+
+			valor = sc.nextInt();
+
+
+
+			if (valor > maiorValor) {
+
+				maiorValor = valor;
+
+			} else {
+
+				menorValor = valor;
+
+			}
+
+
+
+		} while (valor >= 0);
+
+
+
+		System.out.println(maiorValor);
+
+		System.out.println(menorValor);
+
+
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+10 R:  package tarefa09;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio10 {
+
+
+
+	public static void main(String[] args) {
+
+		int valor1, valor2, acumulado, contar = 1, soma = 1;
+
+
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		System.out.println(" Digite o primeiro numero: ");
+
+		valor1 = sc.nextInt();
+
+		System.out.println("dividido por: ");
+
+		valor2 = sc.nextInt();
+
+
+
+		do {
+
+			soma++;
+
+			acumulado = valor2 * contar;
+
+
+
+			contar++;
+
+
+
+		} while (acumulado <= valor1);
+
+
+
+		System.out.println(soma);
+
+
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
