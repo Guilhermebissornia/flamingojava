@@ -1,0 +1,524 @@
+04 R: package tarefa08;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio04 {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		int Numeroum = 0;
+
+		int Numerodois = 1;
+
+
+
+		while (Numeroum <= 20) {
+
+			System.out.println(Numerodois);
+
+
+
+			Numeroum += Numerodois;
+
+			Numeroum += 2;
+
+		}
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+05 R: package tarefa08;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio05 {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		int primeiroNumero = 1;
+
+		int segundoNumero = 3;
+
+
+
+		System.out.println("O expoente de 3 por 0 é 1");
+
+		while (primeiroNumero <= 20) {
+
+			System.out.println("O resultado de 3 por " + primeiroNumero + " é: " + segundoNumero);
+
+
+
+			primeiroNumero++;
+
+			segundoNumero *= 3;
+
+		}
+
+		sc.close();
+
+
+
+	}
+
+
+
+} 
+
+06 R: package tarefa08;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio06 {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		System.out.println("Digite o valor Base: ");
+
+		int base = sc.nextInt();
+
+		System.out.println("Digite o valor do expoente: ");
+
+		int expoente = sc.nextInt();
+
+		int contador = 0, potencia = 1;
+
+
+
+		while (contador != expoente) {
+
+			potencia = potencia * base;
+
+			contador++;
+
+		}
+
+		System.out.println("A potencia da base de " + potencia);
+
+		sc.close();
+
+	}
+
+
+
+}
+
+07 R: package tarefa08;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio07 {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		int numero = 1;
+
+		int numero2 = 1;
+
+		int soma;
+
+
+
+		while (numero <= 4181) {
+
+			System.out.println(numero);
+
+
+
+			soma = numero + numero2;
+
+			numero = numero2;
+
+			numero2 = soma;
+
+
+
+		}
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+08 R: package tarefa08;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio08 {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		int celsius = 0;
+
+
+
+		while (celsius <= 10) {
+
+
+
+			int c = celsius * 10;
+
+			int Fahrenheit = (9 * c + 160) / 5;
+
+
+
+			System.out.println(c + "ºC" + " são " + Fahrenheit + "ºF");
+
+
+
+			celsius++;
+
+		}
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+09 R:package tarefa08;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio09 {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		float numero1 = sc.nextFloat();
+
+		float numero2 = sc.nextFloat();
+
+		float numero3 = sc.nextFloat();
+
+		float numero4 = sc.nextFloat();
+
+		float numero5 = sc.nextFloat();
+
+		float numero6 = sc.nextFloat();
+
+		float numero7 = sc.nextFloat();
+
+		float numero8 = sc.nextFloat();
+
+		float numero9 = sc.nextFloat();
+
+		float numero10 = sc.nextFloat();
+
+
+
+		float soma = numero1 + numero2 + numero3 + numero4 + numero5 + numero6 + numero7 + numero8
+
+				+ numero9 + numero10;
+
+		float mediaAritmetica = soma / 10;
+
+
+
+		System.out.println("A soma dos 10 valores é: " + soma+ ", e a Média aritmedica é: " + mediaAritmetica);
+
+
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+10 R:package tarefa08;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio10 {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int soma = 0, media = 0, contadora = 0, par = 0;
+
+
+
+		while (contadora < 70) {
+
+			if (contadora % 2 == 0) {
+
+				soma = contadora + soma;
+
+				par = contadora;
+
+				contadora++;
+
+			} else {
+
+				contadora++;
+
+			}
+
+		}
+
+		media = soma / par;
+
+		System.out.println("A soma dos números pares é: " + soma + " e a media aritmética é: " + media);
+
+
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+11 R:package tarefa08;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio11 {
+
+
+
+	public static void main(String[] args) {
+
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		
+
+		String nome;
+
+		float largura, comprimento, area, soma = 0;
+
+		char contadora;
+
+
+
+		do {
+
+			System.out.print("Digite a entrada do nome : ");
+
+			nome = sc.nextLine();
+
+
+
+			System.out.print("Digite o  largura do comodo: ");
+
+			 largura= sc.nextFloat();
+
+
+
+			System.out.print("Digite a comprimento do cômodo: ");
+
+			comprimento  = sc.nextFloat();
+
+
+
+			area = largura * comprimento;
+
+
+
+			System.out.println("A área do cômodo " + nome + " é: " + area);
+
+			System.out.println();
+
+
+
+			System.out.print("Deseja continuar calculando?  sim ou não: ");
+
+			contadora = sc.next().charAt(0);
+
+			System.out.println();
+
+
+
+			soma = soma + area;
+
+
+
+			sc.nextLine();
+
+		} while (contadora!= 'n');
+
+
+
+		System.out.println("A soma da area dos cômodos lidos é: " + soma);
+
+
+
+		sc.close();
+
+		
+
+		
+
+		
+
+		
+
+
+
+	}
+
+
+
+}
+
+12 R: package tarefa08;
+
+
+
+import javax.swing.JOptionPane;
+
+
+
+public class Exercicio12 {
+
+
+
+	public static void main(String[] args) {
+
+
+
+		int numero = 0, contar = 0, maiorvalor, menorvalor;
+
+		numero = Integer.parseInt(
+
+				JOptionPane.showInputDialog(null, "Digite um numero", "Numero", JOptionPane.QUESTION_MESSAGE));
+
+		menorvalor = numero;
+
+		maiorvalor = numero;
+
+		do {
+
+			if (numero >= 0) {
+
+				if (numero > maiorvalor) {
+
+					maiorvalor = numero;
+
+				}
+
+				if (numero < menorvalor) {
+
+					menorvalor = numero;
+
+				}
+
+				contar++;
+
+			}
+
+			numero = Integer
+
+					.parseInt(JOptionPane.showInputDialog(null, "Digite um numero", JOptionPane.QUESTION_MESSAGE));
+
+		} while (numero >= 0);
+
+		System.out.println("A quantidade de numeros digitados é " + contar);
+
+		System.out.println("O maior valor digitado é : " + maiorvalor);
+
+		System.out.println("O menor valor digitado é : " + menorvalor);
+
+
+
+	}
+
+
+
+}
+
