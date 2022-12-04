@@ -1,0 +1,441 @@
+package tarefa10;
+
+
+
+public class Exercicio01 {
+
+
+
+	public static void main(String[] args) {
+
+
+
+		int j, quadrado;
+
+		for (j = 15; j <= 200; j++) {
+
+			quadrado = j * j;
+
+			System.out.println("O quadrado de " + j + " é " + quadrado);
+
+		}
+
+	}
+
+
+
+}
+
+
+
+02 R: package tarefa10;
+
+
+
+public class Exercicio02 {
+
+
+
+	public static void main(String[] args) {
+
+		for (int i = 0; i <= 10; i++) {
+
+			for (int j = 0; j <= 10; j++) {
+
+				System.out.println(i + " x " + j + " = " + i * j);
+
+			}
+
+		}
+
+
+
+	}
+
+
+
+}
+
+
+
+03 R: package tarefa10;
+
+
+
+import javax.swing.JOptionPane;
+
+
+
+public class Exercicio03 {
+
+
+
+	public static void main(String[] args) {
+
+		int soma = 0;
+
+		for (int i = 0; i <= 100; i++) {
+
+			soma += i;
+
+		}
+
+		JOptionPane.showMessageDialog(null, "Soma :" + soma);
+
+
+
+	}
+
+
+
+}
+
+04 R:package tarefa10;
+
+
+
+public class Exercicio04 {
+
+
+
+	public static void main(String[] args) {
+
+		int numero = 0;
+
+		int i;
+
+
+
+		for (i = 2; i <= 500; i += 2) {
+
+			if (i % 2 == 0)
+
+				numero += i;
+
+			System.out.println(i + " = " + numero);
+
+		}
+
+
+
+	}
+
+
+
+}
+
+05 R:package tarefa10;
+
+
+
+public class Exercicio05 {
+
+
+
+	public static void main(String[] args) {
+
+		int contar = 0;
+
+
+
+		while (contar <= 20) {
+
+			if (contar % 2 == 1) {
+
+				System.out.println(contar);
+
+			}
+
+			contar++;
+
+		}
+
+
+
+	}
+
+
+
+}
+
+06 R:package tarefa10;
+
+
+
+import javax.swing.JOptionPane;
+
+
+
+public class Exercicio06 {
+
+
+
+	public static void main(String[] args) {
+
+		String valor= "";
+
+		int i;
+
+
+
+		for (i = 1; i < 200; i++) {
+
+			if (i % 4 == 0)
+
+				valor += i + ",";
+
+		}
+
+
+
+		JOptionPane.showMessageDialog(null, valor, "Resultado", JOptionPane.PLAIN_MESSAGE);
+
+
+
+	}
+
+
+
+	}
+
+
+
+07 R:package tarefa10;
+
+
+
+import javax.swing.JOptionPane;
+
+
+
+public class Exercicio07 {
+
+
+
+	public static void main(String[] args) {
+
+		String valor = "";
+
+		int i;
+
+		int j;
+
+		int numero = 3;
+
+
+
+		for (i = 1; i <= 15; i++) {
+
+			if (i == 1) {
+
+				valor += "Três elevado a " + i + " é " + numero;
+
+				i++;
+
+			}
+
+			numero *= 3;
+
+			valor += "Três elevado a " + i + " é " + numero;
+
+		}
+
+		JOptionPane.showMessageDialog(null, valor, "RESULTADO", JOptionPane.PLAIN_MESSAGE);
+
+	}
+
+
+
+}
+
+08 R: package tarefa10;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio08 {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		System.out.println("Digite o Cálculo de potência");
+
+
+
+		System.out.println("Digite a base");
+
+		int base = sc.nextInt();
+
+
+
+		System.out.println("Digite o expoente");
+
+		int expoente = sc.nextInt();
+
+
+
+		int potencia = 1;
+
+		int contar = 1;
+
+
+
+		while (contar <= expoente) {
+
+			potencia *= base;
+
+			contar++;
+
+		}
+
+		System.out.println(base + " ^ " + expoente + " = " + potencia);
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+09 R:package tarefa10;
+
+
+
+public class Exercicio09 {
+
+
+
+	public static void main(String[] args) {
+
+		int anterior = 1, proximo = 1, auxiliar, contar = 1;
+
+
+
+		do {
+
+
+
+			System.out.print(+anterior);
+
+			auxiliar = anterior + proximo;
+
+			anterior = proximo;
+
+			proximo = auxiliar;
+
+			contar++;
+
+		} while (contar <= 15);
+
+
+
+	}
+
+
+
+}
+
+
+
+10 R:package tarefa10;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio10 {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o valor minimo:");
+
+		float minimo = sc.nextFloat();
+
+		System.out.println("Digite o  valor máximo:");
+
+		float maximo = sc.nextFloat();
+
+		System.out.printf("Fahrenheit Celsius");
+
+		for (float i = minimo; i <= maximo; i += .5) {
+
+			System.out.printf("%6.2f     %6.2f%n", i, ((i - 32.0) * (5.0 / 9.0)));
+
+		}
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+
+
+11 R:  package tarefa10;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio11 {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		int i, j, fatorial;
+
+
+
+		System.out.printf("Digite  um numero: ");
+
+		j = sc.nextInt();
+
+
+
+		fatorial = 1;
+
+		for (i = 1; i <= j; i++) {
+
+			fatorial = fatorial * i;
+
+		}
+
+		System.out.printf("resultado o valor do fatorial dos valores ímpares situados na faixa numérica de 1 a 10 é ",
+
+				j, fatorial);
+
+		sc.close();
+
+	}
+
+
+
+}
