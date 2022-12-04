@@ -1,0 +1,499 @@
+﻿01 R: package tarefa03;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Atividade01 {
+
+
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite sua idade ");
+
+int ano = sc.nextInt();
+
+
+
+System.out.println("digite a quantidade de mes desde o seu ultimo aniversario ");
+
+int mes = sc.nextInt();
+
+
+
+System.out.println("digite a quantidade de dias desde o seu ultimo mes versario ");
+
+int dia = sc.nextInt();
+
+
+
+int soma=(ano*365)+(mes*30)+(dia) ;
+
+System.out.println("o resultado é : "+soma);
+
+sc.close();
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+02 R: package tarefa03;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exemplo2 {
+
+
+
+
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("Digite o numero total de Eleitores de um Múnicipio");
+
+float totalEleitoresMunicipio = sc.nextFloat();
+
+System.out.println("Digite o total de votos brancos de um Múnicipio");
+
+float numeroVotosBrancos = sc.nextFloat();
+
+System.out.println("Digite o total de votos nulos de um Múnicipio");
+
+float numeroVotosNulos = sc.nextFloat();
+
+System.out.println("Digite o total de votos válidos de um Múnicipio");
+
+float numeroVotosValidos = sc.nextFloat();
+
+float porcentagemVotosBrancos=numeroVotosBrancos/totalEleitoresMunicipio*100;
+
+float porcentagemVotosValidos=numeroVotosValidos/totalEleitoresMunicipio*100;
+
+float porcentagemVotosNulos=numeroVotosNulos/totalEleitoresMunicipio*100;
+
+System.out.println("A porcentagem de votos brancos corresponde a: "+porcentagemVotosBrancos+"%");
+
+System.out.println("A porcentagem de votos Validos corresponde a: "+porcentagemVotosValidos+"%");
+
+System.out.println("A porcentagem de votos Nulos corresponde a: "+porcentagemVotosNulos+"%");
+
+
+
+sc.close();
+
+}
+
+
+
+}
+
+
+
+03 R: package tarefa03;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exemplo3 {
+
+
+
+
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("Digite o valor do salario atual mensal");
+
+float salario=sc.nextFloat();
+
+System.out.println("Digite o persentual do reajuste");
+
+float percentualreajuste=sc.nextFloat();
+
+float novosalario=salario/100*percentualreajuste+salario;
+
+System.out.println("novo salario correspondente:"+novosalario);
+
+
+
+sc.close();
+
+}
+
+
+
+}
+
+
+
+04 R:package tarefa03;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exemplo4 {
+
+
+
+
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+
+
+System.out.println("Digite o custo de fabricação do automovel");
+
+float custoautomovel=sc.nextFloat();
+
+float valortotaldocarro=custoautomovel*28/100+custoautomovel*45/100+custoautomovel;
+
+System.out.println("valor total do carro com imposto mais distribuidor é:"+valortotaldocarro);
+
+
+
+sc.close();
+
+}
+
+
+
+}
+
+R 05: package tarefa03;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exemplo5 {
+
+
+
+
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("Digite a temperatura em graus Celsius :");
+
+float grausCelsius=sc.nextFloat();
+
+float grausFahrenheit = (9*grausCelsius + 160)/5;
+
+System.out.println("A temperatura em graus Fahrenheit corresponde a :"+grausFahrenheit);
+
+sc.close();
+
+}
+
+}
+
+
+
+06 R: package tarefa03;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exemplo6 {
+
+
+
+
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("Digite a temperatura em graus Fahrenheit :");
+
+float grausFahrenheit=sc.nextFloat();
+
+float grausCelsius = (grausFahrenheit-32)*5/9;
+
+System.out.println("A temperatura em graus Celsius corresponde a :"+grausCelsius);
+
+sc.close();
+
+
+
+}
+
+}
+
+
+
+07 R: package tarefa03;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exemplo7 {
+
+
+
+
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite o valor do raio");
+
+
+
+double raio=sc.nextDouble();
+
+double altura = sc.nextDouble();
+
+double diametro=raio*2;
+
+double area=Math.PI*diametro*altura;
+
+System.out.println("o valor do volume de uma lata de oleo é :"+area);
+
+sc.close();
+
+
+
+}
+
+}
+
+
+
+08 R: package tarefa03;
+
+
+
+import java.util.Scanner;
+
+
+
+
+
+public class Exemplo8 {
+
+
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("Digite o tempo gasto no até o local de chegada");
+
+double tempogasto=sc.nextDouble();
+
+
+
+System.out.println("Digite a velocidade gasta até o local de chegada");
+
+double velocidade=sc.nextDouble();
+
+
+
+double distancia=tempogasto*velocidade;
+
+System.out.println("A distancia percorrida é:" +distancia+tempogasto+velocidade);
+
+
+
+double litros_usados=distancia/12;
+
+System.out.println("a quantidade de litros de combustivel usados é:"+litros_usados);
+
+
+
+sc.close();
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+09 R: package tarefa03;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio9 {
+
+
+
+public static void main(String[] args) {
+
+
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite o valor da prestação");
+
+double valor =sc.nextDouble();
+
+
+
+System.out.println("digite a taxa");
+
+double taxa= sc.nextDouble();
+
+
+
+System.out.println("digete o tempo em atraso");
+
+double tempo=sc.nextDouble();
+
+
+
+double prestacao=valor+(valor*(taxa/100)*tempo);
+
+System.out.println("apresentação do valor de uma prestação em atraso:"+prestacao);
+
+sc.close();
+
+
+
+}
+
+}
+
+
+
+10 R:package tarefa03;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio10 {
+
+
+
+	public static void main(String[] args) {
+
+		
+
+			
+
+		Scanner sc = new Scanner(System.in);
+
+        
+
+		System.out.println("Digite o valor de a ");
+
+		int a = sc.nextInt();
+
+		
+
+		System.out.println("digite o valor de b");
+
+		int b =sc.nextInt();
+
+		
+
+		int recebendovalor= a+b;
+
+		
+
+		System.out.println("B = "+a+" A ="+b);
+
+
+
+		
+
+
+
+		sc.close();
+
+
+
+
+
+	}
+
+}
