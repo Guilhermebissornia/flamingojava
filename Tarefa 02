@@ -1,0 +1,551 @@
+01 R: package atividade;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio02 {
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite um numero");
+
+int numero =sc.nextInt();
+
+int sucessor= numero+1;
+
+
+
+System.out.println("o sucessor do numero digitado é: "+sucessor);
+
+sc.close();
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+02 R: package atividade;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio02 {
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite um numero");
+
+int numero =sc.nextInt();
+
+int antecessor= numero-1;
+
+
+
+System.out.println("o antecessor do numero digitado é: "+antecessor);
+
+sc.close();
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+03 R: package atividade;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio03 {
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite um numero");
+
+int numero =sc.nextInt();
+
+
+
+System.out.println("digite o segundo numero");
+
+int numero2 = sc.nextInt();
+
+
+
+int soma = numero+numero2;
+
+System.out.println("a soma do numero + numero2 é : "+soma);
+
+sc.close();
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+04 R: package atividade;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio04 {
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite um numero");
+
+int numero =sc.nextInt();
+
+
+
+System.out.println("digite o segundo numero");
+
+int numero2 = sc.nextInt();
+
+
+
+int subtracao = numero-numero2;
+
+System.out.println("a subtracao do numero - numero2 é : "+subtracao);
+
+sc.close();
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+05 R: package atividade;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio05 {
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite um numero");
+
+int numero =sc.nextInt();
+
+
+
+System.out.println("digite o segundo numero");
+
+int numero2 = sc.nextInt();
+
+
+
+int multiplicacao = numero*numero2;
+
+System.out.println("a multiplicacao do numero * numero2 é : "+multiplicacao);
+
+sc.close();
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+06 R: package atividade;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio06 {
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite um numero");
+
+float numero =sc.nextFloat();
+
+
+
+System.out.println("digite o segundo numero");
+
+float numero2 = sc.nextFloat();
+
+
+
+float divisao = numero/numero2;
+
+System.out.println("a divisao do numero / numero2 é : "+divisao);
+
+sc.close();
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+07 R: package atividade;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio07 {
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite a base");
+
+double base =sc.nextDouble();
+
+
+
+System.out.println("digite a altura");
+
+double altura = sc.nextDouble();
+
+
+
+double area= base*altura;
+
+System.out.println("a multiplicacao da base* a altura é: "+area);
+
+sc.close();
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+08 R: package atividade;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio08 {
+
+public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite a base");
+
+float base =sc.nextFloat();
+
+
+
+System.out.println("digite a altura ");
+
+float altura = sc.nextFloat();
+
+
+
+float area= base*altura/2;
+
+System.out.println("a multiplicacao da base* a altura é: "+area);
+
+sc.close();
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+9 R: package flip;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio09 { public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite o lado ");
+
+float lado = sc.nextFloat();
+
+
+
+float area= lado*lado;
+
+System.out.println("a dimenensoes de um quadrado é: "+area);
+
+sc.close();
+
+
+
+
+
+}
+
+}
+
+
+
+10 R: package flip;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio10
+
+
+
+{ public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite a diagonal maior ");
+
+float diagonalmaior = sc.nextFloat();
+
+
+
+System.out.println("digite a diagonal menor ");
+
+float diagonalmenor = sc.nextFloat();
+
+
+
+float area= diagonalmaior*diagonalmenor/2;
+
+System.out.println("o calculo da diagonal maior e da diagonal menor é: "+area);
+
+sc.close();
+
+
+
+
+
+}
+
+}
+
+11 R: package flip;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio11
+
+
+
+{ public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite a diagonal maior ");
+
+float basemaior = sc.nextFloat();
+
+
+
+System.out.println("digite a diagonal menor ");
+
+float basemenor = sc.nextFloat();
+
+
+
+System.out.println("digite a diagonal menor ");
+
+float altura = sc.nextFloat();
+
+
+
+float area= (basemaior+basemenor)*altura/2;
+
+System.out.println("as dimencoes da base maior +a base menor*altura/2 é: "+area);
+
+sc.close();
+
+
+
+
+
+}
+
+}
+
+
+
+12 R: package flip;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio12
+
+
+
+{ public static void main(String[] args) {
+
+
+
+Scanner sc = new Scanner(System.in);
+
+
+
+System.out.println("digite o raio ");
+
+double raio = sc.nextDouble();
+
+
+
+double area= Math.PI*raio*raio;
+
+System.out.println("dimensoes de um circulo é: "+area);
+
+sc.close();
+
+
+
+
+
+}
+
+}
