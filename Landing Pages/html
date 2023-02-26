@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/laring.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>laring</title>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#">logo</a>
+            <nav class="nav">
+                <ul>
+                   <li><a href="#">Inicio</a></li> 
+                   <li><a href="#">Hospedagem</a></li> 
+                   <li><a href="#">Sobre</a></li> 
+                   <li><a href="#">Contato</a></li> 
+                </ul>
+            </nav>
+            <div class="Ingressos">
+                <button>Ingressos</button>
+            </div>
+
+        </header>
+        <div class="Hero"></div>
+        <main class="Main">
+            <div class="Left">
+                <h1> Titulo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dicta doloremque illo ullam dolores, odit facere totam temporibus a sunt veritatis possimus libero, ipsum obcaecati? Nemo laboriosam temporibus repellat voluptatem.</p>
+            <div class="templobtn"></div>
+            <button>Conheça o nosso site</button>
+            </div>
+            
+            </div>
+            <div class="Right">
+                <div class="social">
+                <ul>
+                    <li><img src="instagram_icon_161086.png" alt="Instagram"></li>
+                    <li><img src="twitter_socialnetwork_20007.png" alt="Twitter"></li>
+                    <li><img src="YouTube_23392.png" alt="Youtube"></li>
+
+                </ul>
+            </div>
+
+
+        </main>
+    </div>
+    
+</body>
+</html>
