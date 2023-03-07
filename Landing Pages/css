@@ -34,6 +34,8 @@ header{
     height:5rem ;
 }
 
+https://www.bing.com/images/search?view=detailV2&ccid=aSPGkDpz&id=2C7BF00CCF8D6489F047ED79B9B1673D36D54370&thid=OIP.aSPGkDpzcIHC10mrewjfaAHaEz&mediaurl=https%3a%2f%2foffloadmedia.feverup.com%2fsaopaulosecreto.com%2fwp-content%2fuploads%2f2020%2f11%2f26044003%2fpexels-xue-guangjian-1687845-scaled.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.6923c6903a737081c2d749ab7b08df68%3frik%3dcEPVNj1nsbl57Q%26pid%3dImgRaw%26r%3d0&exph=1329&expw=2048&q=camping+praia+PARA+SITE&simid=608022706650156235&FORM=IRPRST&ck=E11622028572CF9D96D52C3680E09E3A&selectedIndex=76&ajaxhist=0&ajaxserp=0
+
 .header ul{
     display: flex;
     gap: 4rem;
