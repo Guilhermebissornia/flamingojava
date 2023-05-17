@@ -1,0 +1,93 @@
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./bigode/Layout";
+import Home from "./bigode/Home";
+import Blogs from "./bigode/Blogs";
+import Contact from "./bigode/contact";
+import NoPage from "./bigode/NoPage";
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+const Blogs = () => {
+    return <h1>Blogs Articles</h1>;
+  };
+  
+  export default Blogs;
+  ---------------------------------------------------------------------------------------------------
+  const Contact = () => {
+    return <h1>Contact Me</h1>;
+  };
+  
+  export default Contact;
+  ------------------------------------------------------------------------------------------------
+const Home = () => {
+    return <h1>Home</h1>;
+  };
+  
+  export default Home;
+  --------------------------------------------------------------------------------------------------
+  const Layout = () => {
+  return (
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/blogs">Blogs</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+
+      <Outlet />
+    </>
+  )
+};
+
+export default Layout;
+-------------------------------------------------------------------------------------------------------------------------------
+const NoPage = () => {
+    return <h1>404</h1>;
+  };
+  
+  export default NoPage;
+  ----------------------------------------------------------------------------------------------------------
+  import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Layout from './bigode/Layout'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <Layout/>
+    </>
+  )
+}
+
+export default App
