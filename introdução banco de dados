@@ -1,0 +1,16 @@
+Novo sistema de banco de dados, que atende as necessidades de um hospital.
+
+
+Necessidades do cliente.
+
+- Sistema que ajude a controlar as consultas realizadas.
+
+- Tipos de médicos no hospital, generalistas,especialistas, residentes... Com seus dados pessoais.
+
+- Cada médico pode ter uma ou mais especialidades, Ex pediatria, clínica geral,gastroenterologia e dermatologia .
+
+-  Dados dos pacientes com as seguintes informações pessoais,nome, data de nascimento, endereço, telefone e e-mail), documentos (CPF e RG) e convênio.( Para cada convênio, são registrados nome, CNPJ e tempo de carência).
+
+- Consultas registradas com data, hora, médico responsável, paciente valor da consulta ou convênio com o número da carteira.
+
+-
