@@ -1,0 +1,65 @@
+CRIANDO TABELAS PRA INSERIR OS DADOS DOS MÉDICOS, PACIENTES, CONSULTAS E RESULTADOS !
+
+
+
+
+drop database if exists hospital;
+CREATE DATABASE if not exists HOSPITAL;
+
+USE HOSPITAL;
+
+
+CREATE TABLE if not exists MEDICOS (
+ID INT NOT null auto_increment,
+NOME varchar (45) not null,
+ESPECIALIDADE varchar (45) not null,
+CONSULTÓRIO varchar (45) not null,
+TURNO varchar (45) not null,
+HORARIO_DE_ATENDIMENTO INT NOT null,
+DIAS_NA_SEMANA varchar (45) not null,
+primary key (ID)
+);
+
+
+create table PACIENTES (
+id INT NOT NULL auto_increment,
+nome varchar(45) NOT NULL ,
+ data_de_nascimento INT  NOT null,
+ endereço varchar(45) NOT NULL ,
+ telefone INT  NOT null,
+ email varchar(45) NOT NULL ,
+ cpf INT  NOT null,
+ rg  INT  NOT null ,
+ convenio varchar(45) NOT NULL ,
+ matricula INT  NOT null,
+PRIMARY KEY (ID)
+);
+
+
+create table consultas (
+id int not null auto_increment,
+pacientes_id int,
+medicos_id int,
+data_de_nascimento int not null,
+dr_responsavel varchar (45) not null,
+paciente varchar(45) not null,
+matricula int unsigned not null,
+encaminhamento varchar(45) not null,
+valor_da_consulta int unsigned not null,
+primary key (id),
+CONSTRAINT FK_PACIENTES_MEDICOS foreign key (medicos_id) references medicos(id),
+constraint  fk_consultas_pacientes foreign key (pacientes_id) references pacientes (id)
+);
+
+
+ create table receita(
+ id int not null auto_increment,
+ consultas_id int,
+ resultado varchar(45) not null,
+ restriçoes varchar (45) not null,
+ remedio varchar (45) not null,
+ quantas_horas_ao_dia int unsigned not null,
+ primary key (id),
+ constraint fk_receita_consultas foreign key (consultas_id) references consultas (id)
+
+ );
