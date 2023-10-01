@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <img src="./img/copacabana-palace-preco.JPG" alt="">
-    <title>Hotel </title>
-    
+    <title> Hotel </title>
+
 </head>
-<h1>UM HOTEL PARA TERABITHIA</h1>
-    <h3>Todo mundo quer aprender a trabalhar com código, mas nós vamos além do código.
-        
-        Sua capacidade de analisar um problema é a habilidade mais importante que você pode desenvolver.
-        
-        Os problemas abaixo possuem um contexto mais rebuscado, mas vamos encontrar soluções.
-        
-        Encontre um lugar silencioso (não estou falando do filme), concentre-se, e tente por um tempo. Depois, se quiser, reúna a galera e vão se ajudando. Com paciência e dedicação, todos conseguirão chegar até lá.</h3>
+<h1>Um Hotel Para Terabithia</h1>
+    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur velit dicta quam soluta perspiciatis non quis id expedita ea alias ratione consequatur cum earum, molestiae magni ab dolorem deserunt.
+
+       <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore iure ullam quas, excepturi mollitia ipsam amet neque omnis a esse saepe odio, temporibus accusantium nemo nihil debitis officia atque repellendus!</p>
+    </h3>
 <body>
     <script>
         let hotelName;
